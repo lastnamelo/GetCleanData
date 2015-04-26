@@ -1,14 +1,19 @@
 ##codebook 
 Data from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip  
 
-Read X_train.txt, y_train.txt, subject_train.txt, X_test.txt, y_test.txt, and subject_test.txt from the folder and store them in their own variables.  
+Read X_train.txt, y_train.txt, subject_train.txt, X_test.txt, y_test.txt, and subject_test.txt from the folder and store them in their own variables as trainx, testx, trainy, testy, trainsubject, and testsubject.
 
 Merges to create 3 new data sets  
+
+xdata, ydata and subjectdata merge the previous datasets.
+features is the features.txt file read.
+
+
 Reads activity_labels.txt and applies descriptive activity names  
 Cleans variable names  
-Creates a new combined and cleaned data set with the averages of each measurement  
 
+Creates a new combined and cleaned data set with the averages of each measurement called combined.
 
-
+Creates a 2nd, independent tidy data set with the average of each variable for each activity and each subject called averages
 
 

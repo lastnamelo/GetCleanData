@@ -23,7 +23,7 @@
   xdata <- xdata[, meanandstdev]
   names(xdata) <- features[meanandstdev, 2]
   
-#Cleaning up variable names.
+# Cleaning up variable names.
       
   names(xdata) <- gsub("\\()", "", names(xdata))
   names(xdata) <- gsub("-", "", names(xdata))
@@ -47,6 +47,6 @@
   library(plyr)
   averages <- ddply(combined, .(combined$subject, combined$activity), function(x) colMeans(x[, 1:66]))
   
-  write.table(averages, "averages_data.txt", row.name=FALSE)
+  write.table(averages, "combinedcleandata.txt", row.name= FALSE)
 
   
